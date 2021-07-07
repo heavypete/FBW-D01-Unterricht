@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		  content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<title>livecoding this</title>
+</head>
+
+<body>
+	<script>
+
+// const that = this;
+
+		console.log(this);
+
+		console.log(this.name);
+		const book = {
+			title: "Sapiens",
+			pages: 323,
+			displayBook: function () {
+				return `${this.title} with ${this.pages} pages`;
+			},
+			displayTitle() {
+				return this.title;
+			},
+			displayBook2: () => {
+				console.log(this);
+				return `${this.title} with ${this.pages} pages`;
+			}
+		}
+		console.log(book.displayBook());
+		console.log(book.displayTitle());
+		console.log(book.displayBook2());
+	</script>
+</body>
+
+</html>

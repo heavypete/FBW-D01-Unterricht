@@ -1,3 +1,7 @@
+//  - how do JavaScript literals differ from JSON?
+// 	- JSON: properties require double parentheses
+// 	- JSON: no methods
+
 // A JavaScript object literal is a comma-separated list of name-value pairs wrapped in curly braces.
 // Object literals encapsulate data, enclosing it in a tidy package. 
 // This minimizes the use of global variables which can cause problems when combining code.

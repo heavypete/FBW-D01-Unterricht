@@ -1,4 +1,9 @@
-// https://javascript.info/array-methods
+// "Logical Thinking III: Pen and paper exercises
+// - Thinking of algorithm complexity: Big O Notation (Very simple introduction)
+// - Reading complex algorithm examples: sorting, shortest path
+// - Sorting arrays with `Array.prototype.sort(<function>)`"
+
+// // https://javascript.info/array-methods
 
 // The reduce() method executes a reducer function (that you provide) on each member of the array resulting in a single output value.
 

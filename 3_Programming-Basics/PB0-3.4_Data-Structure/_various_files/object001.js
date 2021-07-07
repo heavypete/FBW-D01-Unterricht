@@ -1,10 +1,10 @@
-// const _ = require('lodash');
-// const { property } = require("lodash");
+const _ = require('lodash');
+const { property } = require("lodash");
 
 const user = {
 	firstName: 'Edward',
 	lastName: 'Schmidt',
-	status: null
+	status: null 
 };
 user.isAdmin = true;
 delete user.lastName;
@@ -20,7 +20,7 @@ const buildObject = (properties) => {
 	return obj;
 }
 
-const properties = ['firstName', 'middleName', 'lastName'];
+const properties = ['firstName','middleName', 'lastName'];
 const obj = buildObject(properties);
 
 console.log(obj);
@@ -62,7 +62,8 @@ console.log(user1 === user2); // false: values are not the same in memory
 console.log(user3 === user2); // true: values are the same in memory
 console.log(user1);
 console.log(user1.age === user2.age); // true
-//console.log(isEqual(user1, user2));
+console.log(_.isEqual(user1, user2));
+
 console.log('---------------');
 
 const firstName = 'Anke';
